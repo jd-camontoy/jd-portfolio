@@ -265,7 +265,7 @@ const Work2 = () => {
             <section className="work-appreciation-msg-section">
                 <h2>My sincerest appreciation</h2>
                 <div className="work-section">
-                    <p>Thank you for taking the journey with us in creating this application. We were hoping you gained insights into the project the same way we did.</p>
+                    <p>Thank you for taking the journey with us in creating this service. We were hoping you gained insights into the project the same way we did.</p>
                     <p>You can see more journeys with other products that we made through the following mediums:</p>
                     <div className="work-part-col-2 text-center mt-20">
                         <div className="work-part-text">

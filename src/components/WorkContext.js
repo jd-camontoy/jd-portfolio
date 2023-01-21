@@ -9,6 +9,7 @@ import headerArtImg2 from './works/assets/work2/header-art.png';
 
 import Work1 from "./works/Work1";
 import Work2 from "./works/Work2";
+import Work3 from "./works/Work3";
 
 const WorksContext = createContext();
 
@@ -34,7 +35,9 @@ export function WorksProvider({ children }) {
             id: 3,
             title: 'AllScreen Responsive Web App',
             img: image3,
-            modalIsOpen: false
+            modalIsOpen: false,
+            bgHeader: headerArtImg1,
+            content: () => { return(<Work3/>); }
         },
     ];
     const [works, setWorks] = useState(worksList);

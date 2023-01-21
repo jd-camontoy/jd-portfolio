@@ -28,7 +28,7 @@ const Modals = () => {
 
     if (workWithDisplayedModal) {
         return (
-            workWithDisplayedModal.map((work) => <Modal key={work.id} id={work.id} title={work.title} displayModalClass={displayModalClass} content={work.content} closeModal={closeModal} />)
+            workWithDisplayedModal.map((work) => <Modal key={work.id} id={work.id} headerArtImg={work.bgHeader} displayModalClass={displayModalClass} content={work.content} closeModal={closeModal} />)
         )
     } else {
         return ('');

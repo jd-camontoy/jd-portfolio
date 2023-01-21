@@ -9,13 +9,11 @@ import lofiProtoImg from './assets/work1/lwp-1.png';
 import mockupImg1 from './assets/work1/mockup-1.png';
 import mockupImg2 from './assets/work1/mockup-2.png';
 import hifiProtoImg from './assets/work1/hwp-1.png';
-import headerArtImg from './assets/work1/header-art.png';
 
 const Work1 = () => {
     return (
         <main className="work1">
             <header className="work-title-section">
-                {/* <img src={headerArtImg} alt="" /> */}
                 <h1>AllScreen App Design</h1>
                 <h2>Case Study for Creating a Common Showtime Check-in App</h2>
             </header>

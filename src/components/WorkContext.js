@@ -35,13 +35,6 @@ export function WorksProvider({ children }) {
             }
             return work;
         }));
-        // let testArr = worksList.map((work) => {
-        //     if (work.id == workId) {
-        //         work.modalIsOpen = modalState
-        //     }
-        //     return work;
-        // });
-        // console.log(testArr);
     }
 
     return (

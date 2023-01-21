@@ -65,6 +65,16 @@ body {
     }
 }
 
+@keyframes modalDisplay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .jd-btn-primary {
     &,
     &:link,
@@ -302,8 +312,6 @@ body {
 }
 
 .modal {
-    display: none;
-
     &.open {
         display: block;
     }
@@ -313,6 +321,7 @@ body {
     }
 
     &-bg {
+        animation: modalDisplay .2s ease-in;
         position: fixed;
         z-index: 5;
         top: 0;

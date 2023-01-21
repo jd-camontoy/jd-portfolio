@@ -1,0 +1,30 @@
+.work1 {
+    overflow: scroll;
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .work-title-section {
+        font-family: 'Montserrat', sans-serif;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+    }
+
+    section {
+        margin: 4rem 0;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}

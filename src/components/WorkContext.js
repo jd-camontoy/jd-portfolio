@@ -1,8 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext, useState, ReactElement } from "react";
 
 import image1 from '../assets/image/1.png';
 import image2 from '../assets/image/2.png';
 import image3 from '../assets/image/3.png';
+
+import Work1 from "./works/Work1";
 
 const WorksContext = createContext();
 
@@ -12,7 +14,8 @@ export function WorksProvider({ children }) {
             id: 1,
             title: 'AllScreen Mobile App',
             img: image1,
-            modalIsOpen: false
+            modalIsOpen: false,
+            content: () => { return(<Work1/>); }
         },
         {
             id: 2,

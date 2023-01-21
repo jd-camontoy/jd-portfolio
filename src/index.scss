@@ -341,11 +341,14 @@ body {
     }
 
     &-close {
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
         cursor: pointer;
         border: none;
         background: transparent;
         text-decoration: none;
-        padding: 1rem;
+        // padding: 2rem;
         font-size: 2.4rem;
         font-weight: 400;
         opacity: 0.6;
@@ -381,7 +384,7 @@ body {
         border: 1.6px solid $color-black;
         border-bottom: none;
         background-color: $color-bg;
-        padding: 2rem 4rem;
+        padding: 4rem;
         width: 80%;
         height: -webkit-fill-available;
         display: grid;

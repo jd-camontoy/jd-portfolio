@@ -119,7 +119,7 @@ const Work2 = () => {
                         <h4>Low-fidelity prototype</h4>
                         <p>
                             Upon completing the necessary screens reflecting the overall flow of the application, a low-fidelity prototype was created, connecting the homepage to the volunteer opportunities suggestions, details entry and submission, up until to the approval of the volunteer request.<br/>
-                            The prototype was then shared with the participants of the conducted usability study through this link, to gain new insights.
+                            The prototype was then shared with the participants of the conducted usability study through this <a href="https://www.figma.com/proto/EBBHhONprhmumAufP0wxQZ/Low-Fidelity-Prototype-(Community-Service-App)---WC18-Coursera-Google-UX-%5BJDC%5D" target="_blank">link</a>, to gain new insights.
                         </p>
                         <div className="work-center-img w-80 mt-20">
                             <img src={lwpImg} alt="" />
@@ -184,7 +184,7 @@ const Work2 = () => {
                         <h4>High-fidelity prototype</h4>
                         <p>
                             The created high-fidelity prototype was ensured to have the remaining related screens that reflect the user journey through the app, from the presentation of the personalized suggestions, volunteer opportunity pages, submission of request, and screens for the status of the volunteer request.<br/>
-                            The prototype can be accessed through the following link.
+                            The prototype can be accessed through the following <a href="https://www.figma.com/proto/8jtZHcJYN90bko9HxI7kMa/High-Fidelity-Prototype-(Community-Service-App)---WC19-Coursera-Google-UX-%5BJDC%5D" target="_blank">link</a>.
                         </p>
                         <div className="work-center-img w-80 mt-20">
                             <img src={hwpImg} alt="" />

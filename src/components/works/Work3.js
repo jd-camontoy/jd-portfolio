@@ -126,7 +126,7 @@ const Work3 = () => {
                     <div className="work-part-text">
                         <h4>Low-fidelity prototype</h4>
                         <p>Upon completing the necessary screens reflecting the overall flow of the website, a low-fidelity prototype was created, connecting the homepage to the suggestion, seat selection, payment confirmation, and ticket generation.</p>
-                        <p>The prototype was then shared with the participants of the conducted usability study through this link, to gain new insights.</p>
+                        <p>The prototype was then shared with the participants of the conducted usability study through this <a href="https://xd.adobe.com/view/f7fa8a61-c5b4-4a8d-bdf4-e042a98cdfa7-a2a9/?fullscreen" target="_blank">link</a>, to gain new insights.</p>
                         <div className="work-center-img w-60 mt-20">
                             <img src={lofiProtoImg} alt="" />
                         </div>
@@ -172,7 +172,7 @@ const Work3 = () => {
                         <h4>High-fidelity prototype</h4>
                         <p>
                             The created high-fidelity prototype was ensured to have the remaining related screens that reflect the user journey through the website, from searching to confirming the movie, theater, and showtime, and finally, getting the ticket.<br/>
-                            The prototype can be accessed through the following link.
+                            The prototype can be accessed through the following <a href="https://xd.adobe.com/view/1246836c-dd89-43a8-bd68-b9749c6c304c-4715/" target="_blank">link</a>.
                         </p>
                         <div className="work-center-img w-60 mt-20">
                             <img src={hifiProtoImg} alt="" />

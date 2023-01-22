@@ -137,7 +137,10 @@ const Work1 = () => {
                     </div>
                     <div className="work-part-text">
                         <h4>Low-fidelity prototype</h4>
-                        <p>Upon completing the necessary screens reflecting the overall flow of the application, a low-fidelity prototype was created, connecting the homepage to the suggestion, seat selection, payment confirmation, and ticket generation. The prototype was then shared with the participants of the conducted usability study through this link, to gain new insights.</p>
+                        <p>
+                            Upon completing the necessary screens reflecting the overall flow of the application, a low-fidelity prototype was created, connecting the homepage to the suggestion, seat selection, payment confirmation, and ticket generation.<br/>
+                            The prototype was then shared with the participants of the conducted usability study through this <a href="https://www.figma.com/proto/yxcAUXDzZBXBO0iwG0Sw2s/Lo-fi-Prototype---WC6-Coursera-Google-UX-Course" target="_blank">link</a>, to gain new insights.
+                        </p>
                         <div className="work-center-img w-60 mt-20">
                             <img src={lofiProtoImg} alt="" />
                         </div>
@@ -175,13 +178,16 @@ const Work1 = () => {
                             <img className="mr-20" src={mockupImg1} alt="" />
                         </div>
                         <p>Upon receiving the insights from the second usability study, additional screens were added to reflect accurate user interaction and usage, including search, customized selection, and payment details entry form.</p>
-                        <div className="work-center-img w-60 mt-20">
+                        <div className="work-center-img w-80 mt-20">
                             <img src={mockupImg2} alt="" />
                         </div>
                     </div>
                     <div className="work-part-text">
                         <h4>High-fidelity prototype</h4>
-                        <p>The created high-fidelity prototype was ensured to have the remaining related screens that reflect the user journey through the app, from searching to confirming the movie, theater, and showtime, and finally, getting the ticket. The prototype can be accessed through the following link.</p>
+                        <p>
+                            The created high-fidelity prototype was ensured to have the remaining related screens that reflect the user journey through the app, from searching to confirming the movie, theater, and showtime, and finally, getting the ticket.<br/>
+                            The prototype can be accessed through the following <a href="https://www.figma.com/proto/AStGVOFGUArVd3Q0jsqauP/High-Fidelity-Prototype---WC11-Coursera-Google-UX-Course" target="_blank">link</a>.
+                        </p>
                         <div className="work-center-img w-60 mt-20">
                             <img src={hifiProtoImg} alt="" />
                         </div>

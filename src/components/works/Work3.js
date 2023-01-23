@@ -1,4 +1,4 @@
-import './work1.scss';
+import './work.scss';
 import projectOverviewImg from './assets/work3/po-1.png';
 import personaImg from './assets/work1/persona-1.png';
 import userJourneyImg from './assets/work1/uj-1.png';
@@ -12,8 +12,8 @@ import hifiProtoImg from './assets/work3/hfp-1.png';
 
 const Work3 = () => {
     return (
-        <main className="work1">
-            <header className="work-title-section">
+        <main className="work-content work-1">
+            <header className="work-title-section work-1">
                 <h1>AllScreen Website Design</h1>
                 <h2>Case Study for Creating a Common Showtime Check-in Web Service</h2>
             </header>

@@ -32,7 +32,6 @@ const App = () => {
           changeAboutViewDisplayedStatus={changeAboutViewDisplayedStatus}
           doScrollToCreateSection={doScrollToCreateSection}
         />
-        {/* <Content changeDisplayedStatusAbout={changeAboutViewDisplayedStatus} aboutIsDisplayed={aboutIsDisplayed}/> */}
         <Content 
           indicatorClass={indicatorClass}
           changeIndicatorClass={changeIndicatorClass}

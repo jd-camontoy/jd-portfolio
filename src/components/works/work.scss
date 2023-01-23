@@ -1,6 +1,6 @@
 $color-black: #19161D;
 
-.work1 {
+.work-content {
     overflow-y: auto;
     overflow-x: hidden;
     width: 100%;
@@ -20,18 +20,51 @@ $color-black: #19161D;
 
     .work-title-section {
         margin-top: 2rem;
-        font-family: 'Montserrat', sans-serif;
 
         h1 {
             font-size: 4rem;
             font-weight: 800;
-            color: #011638;
         }
 
         h2 {
             font-size: 2.2rem;
             font-weight: 600;
-            color: #0D21A1;
+        }
+
+        &.work-1 {
+            font-family: 'Montserrat', sans-serif;
+
+            h1 {
+                color: #011638;
+            }
+    
+            h2 {
+                color: #0D21A1;
+            }
+        }
+
+        &.work-2 {
+            font-family: 'Suez One', serif;
+
+            h1 {
+                color: #32292F;
+            }
+    
+            h2 {
+                color: #5762D5;
+            }
+        }
+    }
+
+    &.work-1 {
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    &.work-2 {
+        section h2 {
+            font-family: 'Suez One', serif;
         }
     }
 
@@ -57,8 +90,16 @@ $color-black: #19161D;
             align-items: center;
             justify-content: space-between;
 
+            @media only screen and (max-width: 859px) {
+                flex-direction: column-reverse;
+            }
+
             .work-part-right img {
                 height: 44vh;
+
+                @media only screen and (max-width: 859px) {
+                    height: 20vh;
+                }
             }
         }
     }
@@ -75,6 +116,10 @@ $color-black: #19161D;
         &-col-2 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+
+            @media only screen and (max-width: 419px) {
+                grid-template-columns: 1fr;
+            }
 
             &.mt-20 {
                 margin-top: 2rem;
@@ -94,6 +139,10 @@ $color-black: #19161D;
                 background: #00000018; //temporary bg
                 padding: 2rem;
 
+                @media only screen and (max-width: 419px) {
+                    margin-bottom: 1rem;
+                }
+
                 ul {
                     padding-left: 2rem;
                 }
@@ -103,9 +152,12 @@ $color-black: #19161D;
                 }
             }
 
-            .work-part-text:not(:last-of-type) {
-                margin-right: 1rem;
+            @media only screen and (min-width: 420px) {
+                .work-part-text:not(:last-of-type) {
+                    margin-right: 1rem;
+                }
             }
+            
 
             &.with-img {
                 display: flex;
@@ -134,27 +186,48 @@ $color-black: #19161D;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
 
+            @media only screen and (max-width: 549px) {
+                grid-template-columns: 1fr;
+            }
+            
+            &.mt-20 {
+                margin-top: 2rem;
+            }
+
             .work-part-text {
                 margin-bottom: 0;
                 border-radius: 1rem;
                 background: #00000018; //temporary bg
                 padding: 2rem;
 
+                @media only screen and (max-width: 549px) {
+                    margin-bottom: 1rem;
+                }
+
                 h4 {
                     font-size: 1.6rem;
                 }
             }
 
-            .work-part-text:not(:last-of-type) {
-                margin-right: 1rem;
+            @media only screen and (min-width: 550px) {
+                .work-part-text:not(:last-of-type) {
+                    margin-right: 1rem;
+                }
             }
         }
 
         &-fourths {
             margin: 2rem 0;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+
+            @media only screen and (min-width: 550px) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            @media only screen and (max-width: 549px) {
+                grid-template-rows: 1fr;
+            }
 
             .work-part-text {
                 border-radius: 1rem;
@@ -163,12 +236,18 @@ $color-black: #19161D;
                 background: #00000018; //temporary bg
             }
 
-            .work-part-text:nth-child(3), .work-part-text:nth-child(4) {
-                margin-bottom: 0;
+            @media only screen and (min-width: 550px) {
+                .work-part-text:nth-child(3), .work-part-text:nth-child(4) {
+                    margin-bottom: 0;
+                }
+    
+                .work-part-text:nth-child(odd) {
+                    margin-right: 1rem;
+                }
             }
 
-            .work-part-text:nth-child(odd) {
-                margin-right: 1rem;
+            @media only screen and (max-width: 549px) {
+                margin-bottom: 1rem;
             }
         }
 

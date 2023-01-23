@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Works from "./Works";
 import AboutMe from "./AboutMe";
 

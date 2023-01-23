@@ -14,9 +14,17 @@ const Header = ({ changeIndicatorClass, changeAboutViewDisplayedStatus, doScroll
 
     return (
         <div className="header-hero">
-            <div className="hero-content">
+            <div className="hero-content default">
                 <h2>John Daniel Camontoy</h2>
                 <h4>Web Designer and Developer</h4>
+            </div>
+            <div className="hero-content mobile-only">
+                <h2>John Daniel Camontoy</h2>
+                <h4>Web Designer and Developer</h4>
+                <button className="jd-btn-primary" onClick={() => goToAboutScrollDown()}>
+                    Let's Create
+                    <i className="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
             <div className="hero-art">
                 <video autoPlay muted loop>

@@ -39,9 +39,9 @@ const AboutMe = ({ scrollToCreateSection }) => {
                 </div>
             </section>
             <section className="content-about-section content-about-skills">
-                <h3>Current Skills</h3>
                 <div className="content-about-skills-content">
                     <div className="content-about-skills-texts">
+                        <h3>Current Skills</h3>
                         <div className="content-about-skills-text">
                             Working as a full stack web developer in my current job, I experienced and learned a wide array of skills, from creating and maintaining databases, working with frameworks for both back-end and front-end, dealing with cloud-based servers, maintaining efficiency and accessibility of our web applications, to project management and the art of collaboration.
                         </div>
@@ -59,28 +59,23 @@ const AboutMe = ({ scrollToCreateSection }) => {
                 <p>You can reach me out or see more information through the following mediums:</p>
                 <div id="create" className="content-about-connect-buttons">
                     <a href="https://linkedin.com/in/john-daniel-camontoy" target="_blank" className="connect-btn">
-                        <i className="fa-brands fa-linkedin"></i>
                         <div className="connect-btn-details">
-                            <p className="connect-btn-details-title">LinkedIn</p>
+                            <p className="connect-btn-details-title"><i className="fa-brands fa-linkedin"></i>LinkedIn</p>
                             <p className="connect-btn-details-handle">/in/john-daniel-camontoy/</p>
                         </div>
                     </a>
                     <a href="mailto:johndaniel.camontoy@gmail.com" target="_blank" className="connect-btn">
-                        <i className="fa-solid fa-envelope"></i>
                         <div className="connect-btn-details">
-                            <p className="connect-btn-details-title">E-mail</p>
+                            <p className="connect-btn-details-title"><i className="fa-solid fa-envelope"></i>E-mail</p>
                             <p className="connect-btn-details-handle">johndaniel.camontoy@gmail.com</p>
                         </div>
                     </a>
                     <a href="https://drive.google.com/file/d/1R7_QrPsuQ7KeeZjzUs13F6QbZzonTn9v/view?usp=sharing" target="_blank" className="connect-btn">
-                        <i className="fa-solid fa-envelope"></i>
                         <div className="connect-btn-details">
-                            <p className="connect-btn-details-title">Resume</p>
+                            <p className="connect-btn-details-title"><i className="fa-solid fa-file-lines"></i>Resume</p>
                             <p className="connect-btn-details-handle">See it though GDrive</p>
                         </div>
                     </a>
-                    {/* <a href="mailto:johndaniel.camontoy@gmail.com" className="jd-btn-primary connect-btn"><i className="fa-solid fa-envelope"></i>johndaniel.camontoy@gmail.com</a>
-                    <a href="https://drive.google.com/file/d/1R7_QrPsuQ7KeeZjzUs13F6QbZzonTn9v/view?usp=sharing" target="_blank" className="jd-btn-primary connect-btn"><i className="fa-solid fa-file-lines"></i>See Resume</a> */}
                 </div>
             </section>
             <div ref={endOfPage}></div>

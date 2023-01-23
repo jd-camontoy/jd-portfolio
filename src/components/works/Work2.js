@@ -1,4 +1,4 @@
-import './work2.scss';
+import './work.scss';
 import projectOverviewImg from './assets/work2/po-1.png';
 import personaImg1 from './assets/work2/persona-1.png';
 import personaImg2 from './assets/work2/persona-2.png';
@@ -14,8 +14,8 @@ import rdImg from './assets/work2/rd-1.png';
 
 const Work2 = () => {
     return (
-        <main className="work2">
-            <header className="work-title-section">
+        <main className="work-content work-2">
+            <header className="work-title-section work-2">
                 <h1>Lendlove Mobile App and Responsive Website</h1>
                 <h2>Case Study for Creating a Cross-Platform Community Service Network</h2>
             </header>

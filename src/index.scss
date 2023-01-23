@@ -166,7 +166,7 @@ body {
 }
 
 .bg-art {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -423,4 +423,172 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #19161Dcb;
+}
+
+.content-about {
+    height: min-content;
+    padding: 4rem;
+    border-radius: 2rem 2rem 0 0;
+    border: 1.6px solid $color-black;
+    border-bottom: none;
+    margin-top: 6rem;
+    font-size: 1.6rem;
+
+    &-section {
+        margin: 6rem 0;
+        padding: 2rem;
+
+        h3 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            letter-spacing: .6rem;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 2rem;
+
+            &::after {
+                content: "";
+                position: absolute;
+                border: 1.6px solid $color-black;
+                width: 10rem;
+                margin-left: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &-subhero {
+        &-section {
+            margin: 0;
+        }
+
+        &-img {
+            text-align: right;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        &-section {
+            display: grid;
+            grid-template-columns: 1fr 30%;
+            align-items: center;
+        }
+
+        &-texts {
+            h1 {
+                font-size: 4rem;
+                font-weight: 800;
+                margin-bottom: 2.8rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &-more {
+        &-texts {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-text:not(:last-of-type) {
+            margin-right: 2rem;
+        }
+    }
+
+    &-skills {
+        &-content {
+            display: grid;
+            grid-template-columns: 1fr 30%;
+            align-items: center;
+        }
+
+        &-text:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &-connect {
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+
+        &-buttons {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            // width: 100%;
+
+            .connect-btn {
+                text-decoration: none;
+                color: $color-black;
+                margin: 2rem;
+                border: 1.6px $color-black solid;
+                // width: 100%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1.2rem 0;
+                border-radius: 2rem;
+                transition: transform .2s ease-in-out;
+
+                &-details {
+                    &-title {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        letter-spacing: .4rem;
+                        text-transform: uppercase;
+                    }
+
+                    &-handle {
+                        font-size: 1.2rem;
+                        font-style: italic;
+                    }
+                }
+
+                i {
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    transform: scaleX(1.1) scaleY(1.1);
+            
+                    &::after {
+                        animation: slidebg 4s linear infinite;
+                        opacity: 0.8;
+                    }
+                }
+            
+                &:active {
+                    transform: translateY(-2px);
+                }
+            
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    border-radius: 10rem;
+                    background-image: linear-gradient(86.78deg, #7B6D8D -5.26%, #A5C4D4 13.74%, #FFBF69 32.51%, #FFA5AB 50.71%, #FFBF69 67.77%, #A5C4D4 86.53%, #7B6D8D 103.92%);
+                    filter: blur(1.8rem);
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
+    }
 }

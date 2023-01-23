@@ -1,6 +1,17 @@
 import bgVideoSmall from '../assets/video/hero-vid-sm.webm';
 
-const Header = () => {
+const Header = ({ changeIndicatorClass, changeAboutViewDisplayedStatus, doScrollToCreateSection }) => {
+    const DISPLAY_ABOUT = true;
+    const CLASS_INDICATOR_ABOUT = 'point-to-about';
+
+    const goToAboutScrollDown = () => {
+        changeAboutViewDisplayedStatus(DISPLAY_ABOUT);
+        changeIndicatorClass(CLASS_INDICATOR_ABOUT);
+        setTimeout(() => {
+            doScrollToCreateSection();
+        }, 100);
+    }
+
     return (
         <div className="header-hero">
             <div className="hero-content">
@@ -14,10 +25,10 @@ const Header = () => {
                 </video>
             </div>
             <div className="hero-buttons">
-                <a href="#" className="jd-btn-primary">
+                <button className="jd-btn-primary" onClick={() => goToAboutScrollDown()}>
                     Let's Create
                     <i className="fa-solid fa-arrow-right"></i>
-                </a>
+                </button>
             </div>
         </div>
     );

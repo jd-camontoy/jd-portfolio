@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Content from './components/Content';
 import Modals from './components/Modals';
 import { WorksProvider } from './components/WorkContext';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
   const [ aboutIsDisplayed, setAboutIsDisplayed ] = useState(false);
@@ -22,6 +22,16 @@ const App = () => {
     setScrollToCreateSection(true);
     setTimeout(() => setScrollToCreateSection(false), 100);
   }
+
+  useEffect(() => {
+    document.querySelector('#content-loading-hero-art').style.animation = 'moveArtUp .6s ease-in .6s';
+    setTimeout(() => {
+      document.querySelector('#content-loading').style.display = 'none';
+      let rootComponent = document.querySelector('#root');
+      rootComponent.style.display = 'block';
+      rootComponent.style.animation = 'fadeIn .2s ease-in';
+    }, 900);
+  })
 
   return (
     <main className="main-container">

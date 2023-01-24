@@ -1,5 +1,3 @@
-import bgVideoSmall from '../assets/video/hero-vid-sm.webm';
-
 const Header = ({ changeIndicatorClass, changeAboutViewDisplayedStatus, doScrollToCreateSection }) => {
     const DISPLAY_ABOUT = true;
     const CLASS_INDICATOR_ABOUT = 'point-to-about';
@@ -28,7 +26,7 @@ const Header = ({ changeIndicatorClass, changeAboutViewDisplayedStatus, doScroll
             </div>
             <div className="hero-art">
                 <video autoPlay muted loop>
-                    <source src={bgVideoSmall} type="video/webm" />
+                    <source src="/hero-vid-sm.webm" type="video/webm" />
                     Your browser is not supported.
                 </video>
             </div>

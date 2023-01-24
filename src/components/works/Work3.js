@@ -10,6 +10,9 @@ import mockupImg1 from './assets/work3/mockups-1.png';
 import mockupImg2 from './assets/work3/mockups-2.png';
 import hifiProtoImg from './assets/work3/hfp-1.png';
 
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 const Work3 = () => {
     return (
         <main className="work-content work-1">
@@ -51,7 +54,7 @@ const Work3 = () => {
                         </div>
                     </div>
                     <div className="work-part-right">
-                        <img src={projectOverviewImg} alt="" />
+                        <Zoom><img src={projectOverviewImg} alt="" /></Zoom>
                     </div>
                 </div>
             </section>
@@ -86,7 +89,7 @@ const Work3 = () => {
                     <div className="work-part-text">
                         <h4>Persona</h4>
                         <div className="work-center-img w-60 mb-20">
-                            <img src={personaImg} alt="" />
+                            <Zoom><img src={personaImg} alt="" /></Zoom>
                         </div>
                         <div className="work-part-text sub">
                             <h4>Problem statement</h4>
@@ -97,7 +100,7 @@ const Work3 = () => {
                         <h4>User journey map</h4>
                         <p>Mapping and learning Nishijo’s user journey communicates the need for a common showtime check-in website to help users obtain movie tickets speedily.</p>
                         <div className="work-center-img w-60 mt-20">
-                            <img src={userJourneyImg} alt="" />
+                            <Zoom><img src={userJourneyImg} alt="" /></Zoom>
                         </div>
                     </div>
                 </div>
@@ -109,17 +112,21 @@ const Work3 = () => {
                         <h4>Paper wireframes</h4>
                         <p>Upon conducting ideation activities, including doing a competitive audit and storyboarding, paper wireframes were created to reflect both the necessary screens the user will be familiar to interact with and to also materialize features that will make the website effective in helping the user efficiently to the transaction.</p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={paperWireframeImg} alt="" />
+                            <Zoom><img src={paperWireframeImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
                         <h4>Digital wireframes</h4>
                         <div className="work-part-col-2 with-img">
                             <p>With the continuation of the wireframing phase, the initially created digital interface bear the ideal elements that was selected from the paper version, to come up with a cohesive interface.</p>
-                            <img className="ml-20" src={digitalWireframeImg1} alt="" />
+                            <div className="work-center-img w-80 mt-20">
+                                <Zoom><img className="ml-20" src={digitalWireframeImg1} alt="" /></Zoom>
+                            </div>
                         </div>
                         <div className="work-part-col-2 with-img">
-                            <img className="mr-20" src={digitalWireframeImg2} alt="" />
+                            <div className="work-center-img w-80 mt-20">
+                                <Zoom><img className="mr-20" src={digitalWireframeImg2} alt="" /></Zoom>
+                            </div>
                             <p>To materialize the goal of an efficient booking process, the screen for theater and schedule suggestions was created, integrating it with the main transaction flow.</p>
                         </div>
                     </div>
@@ -128,7 +135,7 @@ const Work3 = () => {
                         <p>Upon completing the necessary screens reflecting the overall flow of the website, a low-fidelity prototype was created, connecting the homepage to the suggestion, seat selection, payment confirmation, and ticket generation.</p>
                         <p>The prototype was then shared with the participants of the conducted usability study through this <a href="https://xd.adobe.com/view/f7fa8a61-c5b4-4a8d-bdf4-e042a98cdfa7-a2a9/?fullscreen" target="_blank">link</a>, to gain new insights.</p>
                         <div className="work-center-img w-60 mt-20">
-                            <img src={lofiProtoImg} alt="" />
+                            <Zoom><img src={lofiProtoImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -161,11 +168,13 @@ const Work3 = () => {
                         <h4>Mockups</h4>
                         <div className="work-part-col-2 mb-20 with-img">
                             <p>Given the insights gained from the first conducted usability study, mockups were ensured to contain relevant information regarding available options, together with engaging visuals.</p>
-                            <img className="mr-20" src={mockupImg1} alt="" />
+                            <div className="work-center-img w-80 mt-20">
+                                <Zoom><img className="mr-20" src={mockupImg1} alt="" /></Zoom>
+                            </div>
                         </div>
                         <p>Upon receiving the insights from the second usability study, additional screens were added to reflect accurate user interaction and usage, including search and user authentication.</p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={mockupImg2} alt="" />
+                            <Zoom><img src={mockupImg2} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -175,7 +184,7 @@ const Work3 = () => {
                             The prototype can be accessed through the following <a href="https://xd.adobe.com/view/1246836c-dd89-43a8-bd68-b9749c6c304c-4715/" target="_blank">link</a>.
                         </p>
                         <div className="work-center-img w-60 mt-20">
-                            <img src={hifiProtoImg} alt="" />
+                            <Zoom><img src={hifiProtoImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -237,7 +246,7 @@ const Work3 = () => {
                 <h2>My sincerest appreciation</h2>
                 <div className="work-section">
                     <p>Thank you for taking the journey with us in creating this website. We were hoping you gained insights into the project the same way we did.</p>
-                    <p>You can see more journeys with other products that we made through the following mediums:</p>
+                    {/* <p>You can see more journeys with other products that we made through the following mediums:</p>
                     <div className="work-part-col-2 text-center mt-20">
                         <div className="work-part-text">
                             <p>Email: jdcuxdesign@email.com</p>
@@ -245,7 +254,7 @@ const Work3 = () => {
                         <div className="work-part-text">
                             <p>Website: ux.jdcworks.ph</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </main>

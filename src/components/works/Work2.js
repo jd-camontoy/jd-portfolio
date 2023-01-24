@@ -12,6 +12,9 @@ import hwpImg from './assets/work2/hfp-1.png';
 import sitemapImg from './assets/work2/sitemap-1.png';
 import rdImg from './assets/work2/rd-1.png';
 
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
 const Work2 = () => {
     return (
         <main className="work-content work-2">
@@ -34,7 +37,7 @@ const Work2 = () => {
                             </div>
                         </div>
                         <div className="work-part-right">
-                            <img src={projectOverviewImg} alt="" />
+                            <Zoom><img src={projectOverviewImg} alt="" /></Zoom>
                         </div>
                     </div>
                     
@@ -72,14 +75,14 @@ const Work2 = () => {
                     <div className="work-part-text">
                         <h4>Persona</h4>
                         <div className="work-center-img w-60 mb-20">
-                            <img src={personaImg1} alt="" />
+                            <Zoom><img src={personaImg1} alt="" /></Zoom>
                         </div>
                         <div className="work-part-text sub">
                             <h4>Brian's Problem Statement</h4>
                             <p>Brian is a HR professional who need a way to determine qualified and reputable organization to cooperate with in doing company community services because he needs to ensure the success of the service, both on logistics and the charitable aspect.</p>
                         </div>
                         <div className="work-center-img w-60 mb-20">
-                            <img src={personaImg2} alt="" />
+                            <Zoom><img src={personaImg2} alt="" /></Zoom>
                         </div>
                         <div className="work-part-text sub">
                             <h4>Hanna's Problem Statement</h4>
@@ -90,14 +93,14 @@ const Work2 = () => {
                         <h4>Competitive audit</h4>
                         <p>An audit on similar volunteer network services were made to determine possible gaps and to opportunities for improvements that will be implemented through the product.</p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={caImg} alt="" />
+                            <Zoom><img src={caImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
                         <h4>Ideation</h4>
                         <p>A prompt ideation were conducted to generate ideas and related concepts based on the opportunities and implementations learned through the conducted competitive audit. Using the Crazy Eights methods, several elements were created that will be later applied to the wireframes.</p>
                         <div className="work-center-img w-60 mt-20">
-                            <img src={ideationImg} alt="" />
+                            <Zoom><img src={ideationImg} alt="" /></Zoom>
                         </div>
                     </div>
                 </div>
@@ -108,7 +111,9 @@ const Work2 = () => {
                     <div className="work-part-text">
                         <h4>Digital wireframes</h4>
                         <div className="work-part-col-2 with-img">
-                            <img className="mr-20" src={dwImg} alt="" />
+                            <div className="work-center-img w-80">
+                                <Zoom><img className="mr-20" src={dwImg} alt="" /></Zoom>
+                            </div>
                             <p>
                                 The digital wireframes were developed after the ideation phase to materialize the concepts that will later be tested through a usability study to determine its effectiveness.<br/><br/>
                                 One of the main considerations prior to the creation of the wireframe are the relevancy of the presented information and the capability to sort the presented information to make an efficient volunteer process.
@@ -122,7 +127,7 @@ const Work2 = () => {
                             The prototype was then shared with the participants of the conducted usability study through this <a href="https://www.figma.com/proto/EBBHhONprhmumAufP0wxQZ/Low-Fidelity-Prototype-(Community-Service-App)---WC18-Coursera-Google-UX-%5BJDC%5D" target="_blank">link</a>, to gain new insights.
                         </p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={lwpImg} alt="" />
+                            <Zoom><img src={lwpImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -173,11 +178,13 @@ const Work2 = () => {
                         <h4>Mockups</h4>
                         <div className="work-part-col-2 mb-20 with-img">
                             <p>Given the insights gained from the recently conducted first usability study, mockups were made with the updated displays that reflects the users’ suggestions including engaging visuals, and updated features such as personalized filtering</p>
-                            <img className="ml-20" src={mockupImg1} alt="" />
+                            <div className="work-center-img w-80">
+                                <Zoom><img className="ml-20" src={mockupImg1} alt="" /></Zoom>
+                            </div>
                         </div>
                         <p>Whereas upon receiving the insights from the conducted second usability study, additional screens were added to reflect more relevant feature including notification badges and improved submission status page.</p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={mockupImg2} alt="" />
+                            <Zoom><img src={mockupImg2} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -187,7 +194,7 @@ const Work2 = () => {
                             The prototype can be accessed through the following <a href="https://www.figma.com/proto/8jtZHcJYN90bko9HxI7kMa/High-Fidelity-Prototype-(Community-Service-App)---WC19-Coursera-Google-UX-%5BJDC%5D" target="_blank">link</a>.
                         </p>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={hwpImg} alt="" />
+                            <Zoom><img src={hwpImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
@@ -219,13 +226,13 @@ const Work2 = () => {
                             With the created sitemap, relevant pages and its proper information architecture was deliberately organized to ensure cohesiveness.
                         </p>
                         <div className="work-center-img w-60 mt-20">
-                            <img src={sitemapImg} alt="" />
+                            <Zoom><img src={sitemapImg} alt="" /></Zoom>
                         </div>
                     </div>
                     <div className="work-part-text">
                         <h4>Responsive designs</h4>
                         <div className="work-center-img w-80 mt-20">
-                            <img src={rdImg} alt="" />
+                            <Zoom><img src={rdImg} alt="" /></Zoom>
                         </div>
                         <p>Variation of web design for desktops, tablets, and mobile access were made, with the unique use cases for each devices being considered upon implementation.</p>
                     </div>
@@ -266,7 +273,7 @@ const Work2 = () => {
                 <h2>My sincerest appreciation</h2>
                 <div className="work-section">
                     <p>Thank you for taking the journey with us in creating this service. We were hoping you gained insights into the project the same way we did.</p>
-                    <p>You can see more journeys with other products that we made through the following mediums:</p>
+                    {/* <p>You can see more journeys with other products that we made through the following mediums:</p>
                     <div className="work-part-col-2 text-center mt-20">
                         <div className="work-part-text">
                             <p>Email: jdcuxdesign@email.com</p>
@@ -274,7 +281,7 @@ const Work2 = () => {
                         <div className="work-part-text">
                             <p>Website: ux.jdcworks.ph</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </main>
